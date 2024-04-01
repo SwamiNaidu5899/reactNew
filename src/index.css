@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.mainDiv{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+.card{
+  height: 45vh;
+  width: 23%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 12px;
+}
+.card:hover{
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+.card img{
+  border-radius: 12px;
+}
+.card img:hover{
+  scale: 1.1;
+  transition: 0.5s ease-in;
+}
