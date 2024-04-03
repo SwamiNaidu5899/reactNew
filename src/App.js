@@ -1,9 +1,15 @@
 import './App.css';
-import IndividualIntervalsExample from './FunctionCom/Slides.jsx'
+// import AddDo from './Todos/add';
+// import AddAvengers from './Task-1/avengers.jsx'
+// import Weapon from './Task-1/Weapon'
+import CustomState from './ClassComp/Counter.jsx'
 function App() {
   return (
     <div className="App">
-  <IndividualIntervalsExample/>
+  <CustomState/>
+  {/* <AddAvengers/> */}
+  {/* <Weapon/> */}
+  {/* <AddDo/> */}
     </div>
   );
 }
