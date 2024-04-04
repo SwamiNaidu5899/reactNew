@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    
+}
+.card-details{
+    margin-top: 10vh;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
+.card{
+    width: 25%;
+    padding: 30px;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.card:hover{
+    transform: rotateY(0deg);
+    transition: 1s;
+    scale: 1.01;
+}
+#products-Heading{
+    position: relative;
+    top: 5vh;
+}
+.card button{
+    padding: 7px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+}
+.card button:hover{
+    color: blue;
+    background-color: transparent;
+    border: 1px solid blue;
+}
+.card img{
+    border-radius: 8px;
+}
