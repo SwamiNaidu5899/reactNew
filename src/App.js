@@ -1,5 +1,6 @@
 import './App.css';
-import AddItems from './ToDO/add.js'
+// import AddItems from './ToDO/add.js'
+import ObjOfArray from './TodoObjects/arrayObj.jsx';
 // import CustomPropExample from './Components/FunctionComponents/prop';
 function App() {
   return (
@@ -7,7 +8,8 @@ function App() {
 
 
     {/* <CustomPropExample/> */}
-    <AddItems/>
+    {/* <AddItems/> */}
+    <ObjOfArray/>
 
 
     </div>
