@@ -1,15 +1,15 @@
 import './App.css';
-// import AddDo from './Todos/add';
-// import AddAvengers from './Task-1/avengers.jsx'
-// import Weapon from './Task-1/Weapon'
-import CustomState from './ClassComp/Counter.jsx'
+import AddItems from './ToDO/add.js'
+// import CustomPropExample from './Components/FunctionComponents/prop';
 function App() {
   return (
     <div className="App">
-  <CustomState/>
-  {/* <AddAvengers/> */}
-  {/* <Weapon/> */}
-  {/* <AddDo/> */}
+
+
+    {/* <CustomPropExample/> */}
+    <AddItems/>
+
+
     </div>
   );
 }
