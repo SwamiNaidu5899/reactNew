@@ -37,7 +37,7 @@ class GetData extends Component{
             const {title,description,thumbnail,price} = eachObject
             return(
               <div className="card">
-                <img src={thumbnail} height={250} width={200} alt="" />
+                <img src={thumbnail} height={300} width={250} alt="" />
               <h4>{title}</h4>
               <p style={{fontSize:'15px'}}>{description}</p>
               <button>${price}</button>
