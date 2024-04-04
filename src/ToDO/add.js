@@ -5,7 +5,7 @@ class AddItems extends Component {
 
   state = {
 
-        avengers : ['Cap','IronMan','Thor']
+        avengers : ['https://wallpaperset.com/w/full/b/5/e/476960.jpg','https://images.wallpapersden.com/image/download/thor-in-avengers-endgame_a2lpZ2WUmZqaraWkpJRmbmdlrWZlbWU.jpg','https://images.hdqwalls.com/download/avenger-iron-man-fr-1920x1080.jpg']
 
           }
 
@@ -31,7 +31,7 @@ class AddItems extends Component {
     updateAvenger = (index)=>{
       const newAvenger = this.state.avengers.map((eachAvenger,i)=>{
        if(i===index){
-        return 'Black-panther'
+        return 'https://c4.wallpaperflare.com/wallpaper/611/838/413/spiderman-hd-4k-superheroes-wallpaper-preview.jpg'
        }
        else
        return eachAvenger
@@ -54,9 +54,8 @@ class AddItems extends Component {
         this.state.avengers.map((eachAvenger,index) =>{
           return (
             <>
-            <h3>
-              {eachAvenger}
-            </h3>
+            <img src={eachAvenger} alt='' height={150}/>
+             
             <button onClick={()=>this.deleteAvenger(index)}>Delete</button>
             <button onClick={()=>this.updateAvenger(index)}>Update</button>
             </>
