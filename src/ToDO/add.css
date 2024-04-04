@@ -1,0 +1,11 @@
+.divMain{
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.divMain button{
+    margin: 10px;
+}

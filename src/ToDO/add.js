@@ -1,4 +1,5 @@
 import { Component } from "react";
+import './add.css'
 
 class AddItems extends Component {
 
@@ -45,7 +46,7 @@ class AddItems extends Component {
 
   render() {
     return (
-    <div>
+    <div className="divMain">
 
       <button onClick={this.addAvenger}>addAvenger</button>
 
