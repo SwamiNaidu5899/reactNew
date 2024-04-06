@@ -1,11 +1,10 @@
 import './App.css';
-import ProductListing from './Axios/getData.jsx';
-// import ProductListing from './Axios/getData.jsx';
+import CartCount from './cartCount&Sum/cart';
 
 function App() {
   return (
     <div className="App">
-      <ProductListing/>
+    <CartCount/>
     </div>
   );
 }
