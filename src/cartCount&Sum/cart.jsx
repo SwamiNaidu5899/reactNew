@@ -36,7 +36,7 @@ class CartCount extends Component{
         return eachObj
        })
        this.setState({
-        count : countNew
+        list : countNew
        })
     }
 
@@ -56,7 +56,7 @@ class CartCount extends Component{
             return eachObj
         })
         this.setState({
-            count : countDecNew
+            list : countDecNew
         })
     }
 
