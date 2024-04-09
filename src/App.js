@@ -1,12 +1,10 @@
 import './App.css';
-import CartCount from './cartCount&Sum/cart';
-// import FilterData from './Filter/list';
+import FilterData from './Filter/list';
 
 function App() {
   return (
     <div className="App">
-      {/* <FilterData/> */}
-      <CartCount/>
+      <FilterData/>
     </div>
   );
 }

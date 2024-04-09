@@ -1,29 +1,56 @@
-import axios from 'axios'
+import axios from "axios";
+import "./list.css";
 const { Component } = require("react");
 
-class FilterData extends Component{
+class FilterData extends Component {
+  state = {
+    products: [],
+  };
 
-    state={
-        list : []
-    }
+  componentDidMount() {
+    this.fetchData();
+  }
 
-    fetchData = async()=>{
-        const result = await axios.get('https://dummyjson.com/products')
-        console.log(result);
-    }
+  lowToHigh = () => {
+    const res = this.state.products.sort((a, b) => a.price - b.price);
+    this.setState({
+      products: res,
+    });
+  };
 
-    componentDidMount(){
-        this.fetchData()
-    }
+  highToLow = () => {
+    const newRes = this.state.products.sort((a, b) => b.price - a.price);
+    this.setState({
+      products: newRes,
+    });
+  };
 
+  fetchData = async () => {
+    const data = await axios.get("https://dummyjson.com/products");
+    this.setState({
+      products: data.data.products,
+    });
+  };
 
-    render(){
-        return(
-            <div className="">
-                hi
+  render() {
+    return (
+      <div className="container">
+        <div className="btn">
+          <button onClick={this.lowToHigh}>LowtoHigh</button>
+          <button onClick={this.highToLow}>HighToLow</button>
+        </div>
+        {this.state.products.map((eachObj) => {
+          const { title, id, thumbnail, price } = eachObj;
+          return (
+            <div className="card" key={id}>
+              <img src={thumbnail} alt="" height={150} width={100} />
+              <h4>{title}</h4>
+              <h5>${price}</h5>
             </div>
-        )
-    }
+          );
+        })}
+      </div>
+    );
+  }
 }
-
-export default FilterData
+export default FilterData;
