@@ -1,5 +1,5 @@
 import './App.css';
-import FilterData from './Filter/list';
+import FilterData from './Filter/list.jsx'
 
 function App() {
   return (
