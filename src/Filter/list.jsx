@@ -25,6 +25,24 @@ class FilterData extends Component {
     });
   };
 
+ newF = ()=>{
+  const newData = this.state.products.filter((eachItem,i)=>{
+    return eachItem.price<=1000
+  })
+  this.setState({
+    products:newData
+  })
+ }
+
+ above1k = ()=>{
+  const newData = this.state.products.filter((eachItem,i)=>{
+    return eachItem.price>=1000
+  })
+  this.setState({
+    products:newData
+  })
+ }
+
   fetchData = async () => {
     const data = await axios.get("https://dummyjson.com/products");
     this.setState({
@@ -38,6 +56,8 @@ class FilterData extends Component {
         <div className="btn">
           <button onClick={this.lowToHigh}>LowtoHigh</button>
           <button onClick={this.highToLow}>HighToLow</button>
+          <button onClick={this.newF}>1000 Below</button>
+          <button onClick={this.above1k}>1000 Above</button>
         </div>
         {this.state.products.map((eachObj) => {
           const { title, id, thumbnail, price } = eachObj;
