@@ -1,6 +1,7 @@
 import "./form.css";
 
 import { useRef, useState } from "react";
+import Table from "./table";
 
 const RegisterForm = () => {
   const userNameRef = useRef("");
@@ -53,8 +54,9 @@ const RegisterForm = () => {
         />
         <input type="submit" />
       </form>
+      <Table userData={userData}/>
 
-      <table>
+      {/* <table>
       <thead>
               <th>UserName</th>
               <th>Email</th>
@@ -72,7 +74,7 @@ const RegisterForm = () => {
         )
        })
       }
-      </table>
+      </table> */}
      
       
     </div>

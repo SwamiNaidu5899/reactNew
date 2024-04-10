@@ -1,5 +1,5 @@
 import './App.css';
-// import RegisterForm from './FunctionalCompo/RegisterFrom/form.js'
+import RegisterForm from './FunctionalCompo/RegisterFrom/form.js'
 // import Example1 from './FunctionalCompo/exmpl1';
 // import Practice from './FunctionalCompo/useState/pract.jsx'
 import AddDynamically from './FunctionalCompo/DynamicallyAdd/add.jsx'
@@ -12,7 +12,8 @@ function App() {
       {/* <Practice/> */}
       {/* <Crud/> */}
       {/* <RegisterForm/> */}
-      <AddDynamically/>
+      {/* <AddDynamically/> */}
+      <RegisterForm/>
     </div>
   );
 }
