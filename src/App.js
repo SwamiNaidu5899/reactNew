@@ -1,14 +1,18 @@
 import './App.css';
+// import RegisterForm from './FunctionalCompo/RegisterFrom/form.js'
 // import Example1 from './FunctionalCompo/exmpl1';
-import Practice from './FunctionalCompo/useState/pract.jsx'
+// import Practice from './FunctionalCompo/useState/pract.jsx'
+import AddDynamically from './FunctionalCompo/DynamicallyAdd/add.jsx'
 
 
 function App() {
   return (
     <div className="App">
       {/* <Example1/> */}
-      <Practice/>
+      {/* <Practice/> */}
       {/* <Crud/> */}
+      {/* <RegisterForm/> */}
+      <AddDynamically/>
     </div>
   );
 }
