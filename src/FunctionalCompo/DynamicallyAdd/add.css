@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #006da4;
+}
+.card {
+  height: 20vh;
+  width: 20%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 12px;
+}
+.divCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+form input {
+  padding: 8px 18px;
+  margin: 15px;
+  border-radius: 8px;
+}
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: #032030;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+#btn {
+  height: 5vh;
+  margin: 15px;
+}
