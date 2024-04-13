@@ -4,9 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Btn text='SignIn'/>
-      <Btn text='LogIn'/>
-      <Btn text='Magic'/>
+
     </div>
   );
 }
