@@ -1,0 +1,59 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background: rgb(8, 210, 72);
+  background: radial-gradient(
+    circle,
+    rgba(8, 210, 72, 1) 0%,
+    rgba(110, 174, 250, 0.8128501400560224) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 20%;
+  background-color: white;
+  padding: 7vh 15vh 10vh 15vh;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 9px 8px 11px -8px rgba(255,255,255,0.75);
+  -webkit-box-shadow: 9px 8px 11px -8px rgba(255,255,255,0.75);
+  -moz-box-shadow: 9px 8px 11px -8px rgba(255,255,255,0.75);
+}
+form input {
+  width: 100%;
+  margin: 10px;
+  padding: 12px 30px;
+  border: 0.1px solid rgb(202, 202, 202);
+  border-radius: 15px;
+}
+label {
+  text-align: start;
+  position: relative;
+  left: -42%;
+  font-size: 18px;
+  font-weight: 650;
+}
+#mail {
+  position: relative;
+  left: -48%;
+}
+#btn {
+  padding: 12px 15px;
+  background-color: rgb(27, 27, 37);
+  color: white;
+  width: 50%;
+}
+#btn:hover {
+  color: rgb(27, 27, 37);
+  background-color: transparent;
+  border: 1px solid rgb(27, 27, 37);
+}
+span {
+  font-size: 14px;
+  color: red;
+}

@@ -1,9 +1,15 @@
 import './App.css'
-import CrudOnAvng from './FunctionalCompo/DynamicallyAdd/add.jsx'
+// import RegisterForm from './FunctionalCompo/ControlledFroms/register.js'
+import LogInForm from './FunctionalCompo/ControlledFroms/login.jsx'
+import Register from './FunctionalCompo/ControlledFroms/singleState/register.jsx'
 function App() {
   return (
     <div className="App">
-      <CrudOnAvng/>
+      {/* <RegisterForm/> */}
+      {/* <LogInForm/> */}
+      {/* <Register/> */}
+      <LogInForm/>
+
     </div>
   );
 }
