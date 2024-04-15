@@ -1,0 +1,42 @@
+#navBar{
+    height: 15vh;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+}
+#logoDiv{
+    height: 15vh;
+    width: 20%;
+}
+#navItems{
+    height: 15vh;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+#listItems{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#listItems li{
+    list-style: none;
+    font-weight: bold;
+}
+#listItems li:hover{
+    color: blue;
+}
+#btn{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn button{
+    padding: 8px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
