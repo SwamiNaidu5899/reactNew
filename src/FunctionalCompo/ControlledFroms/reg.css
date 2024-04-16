@@ -1,5 +1,5 @@
 #container {
-  height: 100vh;
+  height: 88vh;
   width: 100%;
   background: rgb(27, 30, 38);
   background: linear-gradient(
@@ -33,13 +33,13 @@ form input {
 label {
   text-align: start;
   position: relative;
-  left: -42%;
+  left: -35%;
   font-size: 18px;
   font-weight: 650;
 }
 #mail {
   position: relative;
-  left: -48%;
+  left: -40%;
 }
 #btn {
   padding: 12px 15px;

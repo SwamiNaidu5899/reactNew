@@ -16,7 +16,7 @@ const Example1 = () => {
   }
 
   const decCountHandler = ()=>{
-    
+        setCount(prevState=>prevState-1)
   }
   const fetchEachCity = async()=>{
       const eachObjData = await axios.get(
