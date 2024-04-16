@@ -1,9 +1,15 @@
 import './App.css'
-import PostUser from './PostUser/post'
+import CurrentLocation from './WeatherApp/weather';
+// import Weather from './WeatherApp/weather';
+// import Chaitanya from './useEffecct/exNew';
+// import Example1 from './useEffecct/exple2';
 function App() {
   return (
     <div className="App">
-      <PostUser/>
+      {/* <Example1/> */}
+      {/* <Chaitanya/> */}
+      {/* <Weather/> */}
+      <CurrentLocation/>
     </div>
   );
 }
