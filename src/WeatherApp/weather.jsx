@@ -4,20 +4,19 @@ import { useEffect, useState } from "react"
 const CurrentLocation = ()=>{
 
     const [curLocation , setCurLocation] = useState({})
-    const [city,setCity] = useState(null)
-    // const [curLocationJs,setCurLocationJs] = useState({})
 
     useEffect(()=>{
         fetchLocation()
-        // getLocationUsingJs()
         fetchWeather()
     },[])
 
     const fetchLocation = async()=>{
         const location = await axios.get('https://ipapi.co/json')
         setCurLocation(location.data)
-        // setCity(location.data.city)
     }
+
+    let cityWeather = curLocation.city
+    console.log(cityWeather);
 
     // const getLocationUsingJs = ()=>{
     //     navigator.geolocation.getCurrentPosition((position)=>{
@@ -27,7 +26,7 @@ const CurrentLocation = ()=>{
     // }
 
     const fetchWeather = async()=>{
-        const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${curLocation.city}&appid=bf89bc2cde67abeceea98d4c23a10716`)
+        const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityWeather}&appid=bf89bc2cde67abeceea98d4c23a10716`)
         console.log(weather);
     }
 
