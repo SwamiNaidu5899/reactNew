@@ -10,12 +10,21 @@ const CurrentLocation = ()=>{
     useEffect(()=>{
         fetchLocation()
         // getLocationUsingJs()
-        fetchWeather()
     },[])
 
     const fetchLocation = async()=>{
-        const location = await axios.get('https://ipapi.co/json')
-        setCurLocation(location.data)
+        try {
+            const location = await axios.get('https://ipapi.co/json')
+
+
+            setCurLocation(location?.data)
+            const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location?.data?.city}&appid=bf89bc2cde67abeceea98d4c23a10716`)
+            console.log(weather,"weather")
+            
+        } catch (error) {
+            
+        }
+       
         // setCity(location.data.city)
     }
 
@@ -26,17 +35,14 @@ const CurrentLocation = ()=>{
     //       })
     // }
 
-    const fetchWeather = async()=>{
-        const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${curLocation.city}&appid=bf89bc2cde67abeceea98d4c23a10716`)
-        console.log(weather);
-    }
+   
 
     return(
         <div>
            <h1>Using API</h1>
-           <p>Latitude : {curLocation.latitude}</p>
-           <p>Longitude : {curLocation.longitude}</p>
-           <p>City : {curLocation.city}</p>
+           <p>Latitude : {curLocation?.latitude}</p>
+           <p>Longitude : {curLocation?.longitude}</p>
+           <p>City : {curLocation?.city}</p>
 {/* 
 
            <h1>Using JS GeoLocation</h1>

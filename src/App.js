@@ -1,10 +1,15 @@
-import RouterPage from "./ReactRouter/RoutingStack/routing";
+// import RouterPage from "./ReactRouter/RoutingStack/routing";
+
+// import AddToCart from "./addToCart/cart";
+import CurrentLocation from './WeatherApp/weather'
 
 
 function App() {
   return (
     <>
-   <RouterPage/>
+   {/* <RouterPage/> */}
+   {/* <AddToCart/> */}
+   <CurrentLocation/>
     </>
   );
 }
