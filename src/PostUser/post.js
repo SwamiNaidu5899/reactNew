@@ -1,5 +1,6 @@
 import axios from "axios"
 import "./post.css";
+import {useNavigate} from 'react-router-dom'
 
 import facebook from "./facebook.png";
 import github from "./github.png";
@@ -60,6 +61,16 @@ const PostUser = () => {
 //      console.log(data);
 //   };
 
+  const homeNavigator = useNavigate()
+
+  const goToHome = ()=>{
+      homeNavigator('/')
+  }
+
+  const goToSignUp = ()=>{
+    homeNavigator('/contact')
+  }
+
   const axiosMethod = async(userInfo)=>{
     const response = await axios.post('https://dummyjson.com/auth/login',userInfo)
     if(response.message){
@@ -74,8 +85,8 @@ const PostUser = () => {
   }
 
   return (
-    <div className="container">
-      <form onSubmit={formHandler}>
+    <div className="containerSignIn">
+      <form id="signInForm" onSubmit={formHandler}>
         <h3>Welcome back!</h3>
         <h4>Please sign in to ur account</h4>
         <input
@@ -97,7 +108,7 @@ const PostUser = () => {
         />
         <div id="btnDiv">
           <h6 id="forgot-password">Forgot Password</h6>
-          <input id="btn" type="submit" value="LogIn" />
+          <input id="btnlogIn" type="submit" value="LogIn" />
         </div>
         <div id="iconDiv">
           <h5>Or Signup using</h5>
@@ -106,6 +117,9 @@ const PostUser = () => {
             <img src={github} height="35" alt="" />
             <img src={twitter} height="35" alt="" />
           </div>
+          {/* <button id="btnHome" onClick={goToHome}>Home</button> */}
+          <p>Don't have an account</p>
+          <button id="btnSignUp" onClick={goToSignUp}>SignUp</button>
         </div>
       </form>
     </div>

@@ -1,0 +1,24 @@
+.detailsContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detailsCard{
+    width: 30%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 45px;
+    border-radius: 8px;
+}
+.detailsCard button{
+    position: relative;
+    top: 2vh;
+    left: 0;
+    cursor: pointer;
+}

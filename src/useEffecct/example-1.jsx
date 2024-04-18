@@ -38,7 +38,7 @@ const Example1 = () => {
   return (
     <div className="container">
       <h1>Cities</h1>
-      <button onClick={decCountHandler}>Past</button>
+      <button onClick={decCountHandler}>Prev</button>
       <button onClick={countHandler}>Next</button>
       <div id="card">
         <h2>{response.name}</h2>

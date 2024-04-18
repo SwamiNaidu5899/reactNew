@@ -1,11 +1,12 @@
 import Navbar from "../Components/nav"
+import ProductDetails from "./ProductsPage/ProductsDetails"
 
 const ServicesPage = ()=>{
     return(
         <>
         <Navbar/>
-        <h1>Services</h1>
-        </>
+        <ProductDetails/>
+       </>
     )
 }
 export default ServicesPage

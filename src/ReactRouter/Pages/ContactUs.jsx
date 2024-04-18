@@ -1,10 +1,15 @@
+import RegisterForm from "../../FunctionalCompo/ControlledFroms/register"
 import Navbar from "../Components/nav"
+// import ProductDetails from "./ProductsPage/ProductsDetails"
 
 const ContactUSPage = ()=>{
     return(
         <>
         <Navbar/>
-        <h1>Contact</h1>
+        <RegisterForm/>
+
+        {/* <h1>Contact</h1> */}
+        {/* <ProductDetails/> */}
         </>
     )
 }

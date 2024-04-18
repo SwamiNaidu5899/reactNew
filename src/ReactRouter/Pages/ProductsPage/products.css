@@ -1,0 +1,28 @@
+.container-products{
+    width: 100%;
+    background-color: rgb(29, 29, 54);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    height: 55vh;
+    width: 20%;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#btnDetail{
+    background-color: black;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+:link{
+    color: white;
+}
