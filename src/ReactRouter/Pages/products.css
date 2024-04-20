@@ -1,0 +1,22 @@
+.container-products{
+   display: flex;
+}
+.card{
+    height: 55vh;
+    width: 20%;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#btnNew{
+    padding: 2px 12px;
+    background-color: transparent;
+    color: rgb(9, 9, 44);
+    border:  1px solid rgb(9, 9, 44);
+    border-radius: 4px;
+}

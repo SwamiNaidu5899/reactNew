@@ -1,6 +1,6 @@
 import axios from "axios"
 import "./post.css";
-import {useNavigate} from 'react-router-dom'
+// import {useNavigate} from 'react-router-dom'
 
 import facebook from "./facebook.png";
 import github from "./github.png";
@@ -61,15 +61,15 @@ const PostUser = () => {
 //      console.log(data);
 //   };
 
-  const homeNavigator = useNavigate()
+  // const homeNavigator = useNavigate()
 
-  const goToHome = ()=>{
-      homeNavigator('/')
-  }
+  // const goToHome = ()=>{
+  //     homeNavigator('/')
+  // }
 
-  const goToSignUp = ()=>{
-    homeNavigator('/contact')
-  }
+  // const goToSignUp = ()=>{
+  //   homeNavigator('/contact')
+  // }
 
   const axiosMethod = async(userInfo)=>{
     const response = await axios.post('https://dummyjson.com/auth/login',userInfo)
@@ -119,7 +119,7 @@ const PostUser = () => {
           </div>
           {/* <button id="btnHome" onClick={goToHome}>Home</button> */}
           <p>Don't have an account</p>
-          <button id="btnSignUp" onClick={goToSignUp}>SignUp</button>
+          {/* <button id="btnSignUp" onClick={goToSignUp}>SignUp</button> */}
         </div>
       </form>
     </div>

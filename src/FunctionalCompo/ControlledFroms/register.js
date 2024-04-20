@@ -1,5 +1,6 @@
+import { DataShare } from "../../ReactRouter/RoutingStack/routing";
 import "./reg.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 const RegisterForm = () => {
   const [name, setName] = useState("");
@@ -7,6 +8,8 @@ const RegisterForm = () => {
   const [mail, setMail] = useState("");
   const [userNameErr, setUserNameErr] = useState(null);
   const [passwordErr, setPasswordErr] = useState(null);
+
+  const {data,changeColor} = useContext(DataShare)
 
   const nameHandler = (event) => {
     const userName = event.target.value;
@@ -45,7 +48,9 @@ const RegisterForm = () => {
   }
 
   return (
-    <div id="container">
+    <div style={{
+      background:`${data.backgroundColor}`
+    }} id="container">
       <form onSubmit={formHandler}>
         <h2>SignUp Form</h2>
         <label>UserName :</label>

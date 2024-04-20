@@ -1,0 +1,12 @@
+/* body{
+    background-color: black;
+} */
+#btnDetails{
+    position: relative;
+    top: 0;
+    left: 0;
+    color: white;
+}
+:link{
+    color: white;
+}

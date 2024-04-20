@@ -1,11 +1,14 @@
 import './products.css'
 import {Link} from 'react-router-dom'
 import axios from "axios";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useEffect } from "react";
+import { DataShare } from '../../RoutingStack/routing';
 
 const ProductDetails = () => {
   const [product, setProduct] = useState([]);
+
+  const {data,changeColor} = useContext(DataShare)
 
   useEffect(() => {
     fetchData();
@@ -17,7 +20,9 @@ const ProductDetails = () => {
   };
 
   return (
-    <div className="container-products">
+    <div style={{
+      background:`${data.backgroundColor}`
+    }} className="container-products">
       {product.map((eachProduct) => {
         const { title, brand, thumbnail ,id } = eachProduct;
         return (
